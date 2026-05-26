@@ -66,6 +66,8 @@ function renderCanvas(name) {
 
   const doDraw = () => {
     ctx.clearRect(0, 0, CARD_W, CARD_H);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, CARD_W, CARD_H);
 
     // Draw template
     ctx.drawImage(cardImg, 0, 0, CARD_W, CARD_H);
@@ -126,7 +128,7 @@ function downloadCard() {
         </svg>
         تحميل البطاقة`;
       downloadBtn.disabled = false;
-    }, 'image/png');
+    }, 'image/jpeg', 0.95);
   };
 
   setTimeout(() => {
