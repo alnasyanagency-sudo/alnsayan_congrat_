@@ -109,7 +109,7 @@ function downloadCard() {
       const url = URL.createObjectURL(blob);
       const a   = document.createElement('a');
       a.href     = url;
-      a.download = `عيد-مبارك-${name}.png`;
+      a.download = 'card-template.jpeg';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
