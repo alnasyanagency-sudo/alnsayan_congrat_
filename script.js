@@ -14,9 +14,9 @@ const CARD_H = 2000;
 */
 const NAME_CENTER_Y_PCT = 0.7160;
 
-// ── Pre-load card image from embedded base64 (avoids CORS taint on canvas)
+// ── Pre-load card image from JPEG file
 const cardImg = new Image();
-cardImg.src = CARD_BASE64;
+cardImg.src = 'assets/card-template.jpeg';
 
 // ── DOM
 const nameField   = document.getElementById('nameField');
